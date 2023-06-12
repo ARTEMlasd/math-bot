@@ -12,7 +12,11 @@ def validate_input(text):  # '1,2,3'
         return False
 
 
+
 def romb(d1, d2):
+    if (d1 or d2) <0:
+        s = "неверные данные"
+        return s
     s = 0.5 * (d1 * d2)
     return s
 
